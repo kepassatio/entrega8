@@ -41,6 +41,11 @@ exports.answer = function(req, res) {
   );
 };
 
+// GET /author
+exports.author = function (req, res) {
+  res.render('author', { errors: []});
+};
+
 // GET /quizes/new
 exports.new = function(req, res) {
   var quiz = models.Quiz.build( // crea objeto quiz
